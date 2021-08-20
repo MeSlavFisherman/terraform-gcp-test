@@ -8,9 +8,6 @@ terraform {
 }
 
 provider "google" {
-  credentials = file(var.credentials_file)
-  #file("syntio-aquarium-60a3ab4af9fb.json")
-
   project = var.project
   region  = var.region
   zone    = var.zone
