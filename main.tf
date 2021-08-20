@@ -8,11 +8,11 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("<NAME>.json")
+  credentials = file("syntio-aquarium-60a3ab4af9fb.json")
 
   project = "syntio-aquarium"
-  region  = "us-central1"
-  zone    = "us-central1-c"
+  region  = "europe-west4"
+  zone    = "europe-west4-a"
 }
 
 resource "google_compute_network" "vpc_network" {
